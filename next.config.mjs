@@ -13,6 +13,9 @@ const nextConfig = {
   distDir: "out",
   cleanDistDir: true,
   output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
