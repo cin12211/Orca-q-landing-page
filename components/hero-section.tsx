@@ -7,10 +7,10 @@ export function HeroSection() {
   return (
     <section
       className="flex flex-col items-center text-center relative mx-auto rounded-2xl overflow-hidden my-6 py-0 px-4
-         w-full h-[400px] md:w-[1220px] md:h-[600px] lg:h-[810px] md:px-0"
+         w-screen h-[400px] md:w-[100vw] md:h-[600px] lg:h-[810px] md:px-0"
     >
       {/* SVG Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="fixed inset-0 z-0">
         <svg
           width="100%"
           height="100%"

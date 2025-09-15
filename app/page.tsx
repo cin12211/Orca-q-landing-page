@@ -13,7 +13,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden pb-0 pt-20">
       <div className="relative z-10">
-        <main className="max-w-[1320px] mx-auto relative">
+        <main className="  relative">
           <HeroSection />
           {/* Dashboard Preview Wrapper */}
           <div className="absolute bottom-[-150px] md:bottom-[-400px] left-1/2 transform -translate-x-1/2">
