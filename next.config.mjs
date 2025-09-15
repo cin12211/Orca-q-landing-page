@@ -11,6 +11,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   distDir: "out",
+  cleanDistDir: true,
 };
 
 export default nextConfig;
