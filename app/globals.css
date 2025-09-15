@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Themeable Colors - Updated with Black Primary */
+    --background: 210 11% 7%; /* #0f1211 */
+    --foreground: 0 0% 100%; /* Pure white for maximum contrast */
+
+    --muted: 240 2% 16%; /* #27272a */
+    --muted-foreground: 0 0% 95%; /* High contrast white for better readability */
+    --muted-foreground-light: 0 0% 85%; /* Light gray for secondary text */
+    --muted-foreground-dark: 0 0% 75%; /* Medium gray for tertiary text */
+
+    --card: 220 17% 98% / 0.01;
+    --card-foreground: 0 0% 100%; /* White text on cards */
+
+    --popover: 210 11% 7%;
+    --popover-foreground: 0 0% 100%; /* White text in popovers */
+
+    /* Updated primary color to black */
+    --primary: 0 0% 0%; /* #000000 - Black */
+    --primary-foreground: 0 0% 100%; /* #ffffff - White text on black */
+    --primary-dark: 0 0% 10%; /* #1a1a1a - Slightly lighter black for hover states */
+    --primary-light: 0 0% 20%; /* #333333 - Light black/dark gray for accents */
+
+    /* Secondary Accent Colors (for buttons, etc.) */
+    --secondary: 160 14% 93%; /* #e7eceb */
+    --secondary-foreground: 165 14% 8%; /* #141a18 */
+
+    --accent: 240 2% 25%; /* #3f3f42 */
+    --accent-foreground: 240 2% 96%; /* #f4f4f5 */
+
+    --border: 240 100% 100% / 0.08; /* rgba(255, 255, 255, 0.08) */
+    --border-light: 210 17% 6% / 0.1; /* rgba(16,24,40,0.1) */
+    --border-dark: 210 17% 6% / 0.05; /* rgba(16,24,40,0.05) */
+
+    --ring: 0 0% 0%; /* Black ring color to match primary */
+
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
