@@ -2,7 +2,7 @@
 
 export function SocialProof() {
   return (
-    <section className="self-stretch py-4 flex flex-col justify-center items-center gap-6 overflow-hidden">
+    <section className="self-stretch py-0 flex flex-col justify-center items-center gap-6 overflow-hidden">
       {/* <div className="text-center text-gray-300 text-sm font-medium leading-tight">
         Trusted by fast-growing startups
       </div>
