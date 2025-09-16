@@ -1,21 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AiCodeReviews from "./bento/ai-code-reviews";
-import RealtimeCodingPreviews from "./bento/real-time-previews";
-import OneClickIntegrationsIllustration from "./bento/one-click-integrations-illustration";
-import MCPConnectivityIllustration from "./bento/mcp-connectivity-illustration";
-import EasyDeployment from "./bento/easy-deployment";
-import ParallelCodingAgents from "./bento/parallel-agents";
+import Image from "next/image";
 
 const FeatureCard = ({
+  id,
   title,
   description,
-  Component,
 }: {
+  id: string;
   title: string;
   description: string;
-  Component: React.FC;
 }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -44,8 +39,18 @@ const FeatureCard = ({
         </p>
       </div>
     </div>
-    <div className="self-stretch h-80 relative -mt-0.5 z-10">
-      <Component />
+    <div className="flex justify-center mb-8">
+      <div className="self-stretch h-2/3 w-2/3 relative -mt-0.5 z-10 ">
+        <div className="bg-primary-light/50 rounded-2xl p-2 shadow-2xl">
+          <Image
+            src={`/images/${id}.png`}
+            alt="Editor preview"
+            width={1160}
+            height={700}
+            className="w-full h-full object-cover rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
     </div>
   </motion.div>
 );
@@ -53,40 +58,28 @@ const FeatureCard = ({
 export function SectionedFeatures() {
   const features = [
     {
-      id: "ai-code-reviews",
-      title: "AI-powered code reviews",
-      description: "Get real-time, smart suggestions for cleaner code.",
-      Component: AiCodeReviews,
+      id: "workspace-based-management",
+      title: "Workspace-Based Management",
+      description:
+        "Organize your projects with ease. Each workspace can hold multiple database connections, helping you keep environments and projects neatly separated.",
     },
     {
-      id: "parallel-agents",
-      title: "Launch parallel coding agents",
-      description: "Solve complex problems faster with multiple AI agents.",
-      Component: ParallelCodingAgents,
+      id: "simple-query",
+      title: "Simple Query",
+      description:
+        "Interact with your tables through an intuitive UI. Browse, filter, and edit data directly without needing to write SQL, designed for smooth and user-friendly workflows.",
     },
     {
-      id: "real-time-previews",
-      title: "Real-time coding previews",
-      description: "Chat, collaborate, and instantly preview changes together.",
-      Component: RealtimeCodingPreviews,
+      id: "raw-query-with-variables",
+      title: "Raw Query with Variables",
+      description:
+        "For power users who love SQL. Write raw queries and insert variables on the fly, giving you flexibility and full control when working with complex data.",
     },
     {
-      id: "mcp-connectivity",
-      title: "Flexible MCP connectivity",
-      description: "Effortlessly manage and configure MCP server access.",
-      Component: MCPConnectivityIllustration,
-    },
-    {
-      id: "one-click-integrations",
-      title: "One-click integrations",
-      description: "Easily connect your workflow with popular dev tools.",
-      Component: OneClickIntegrationsIllustration,
-    },
-    {
-      id: "easy-deployment",
-      title: "Deployment made easy",
-      description: "Go from code to live deployment on Vercel instantly.",
-      Component: EasyDeployment,
+      id: "erd-made-simple",
+      title: "ERD Made Simple",
+      description:
+        "Visualize your database instantly. Generate a clear and powerful Entity Relationship Diagram (ERD) to understand and design your schema structure with ease.",
     },
   ];
 
@@ -101,12 +94,11 @@ export function SectionedFeatures() {
         <div className="self-stretch flex flex-col justify-center items-center gap-2 z-10">
           <div className="flex flex-col justify-start items-center gap-4">
             <h2 className="w-full max-w-[655px] text-center text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px]">
-              Empower Your Workflow with AI
+              ✨ Features
             </h2>
             <p className="w-full max-w-[600px] text-center text-muted-foreground text-lg md:text-xl font-medium leading-relaxed">
-              Ask your AI Agent for real-time collaboration, seamless
-              integrations, and actionable insights to streamline your
-              operations.
+              Discover the core tools that make Orca-q a simple yet powerful
+              database editor.
             </p>
           </div>
         </div>

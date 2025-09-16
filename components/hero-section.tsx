@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Header } from "./header";
-import { Database, Github, Shield, Users, Zap } from "lucide-react";
+import { Database, Github, Zap, Code } from "lucide-react";
 import Link from "next/link";
 import { appUrl, githubUrl } from "@/constants";
 
@@ -581,8 +581,7 @@ export function HeroSection() {
 
         <p className="text-muted-foreground text-base md:text-base lg:text-lg font-medium leading-relaxed max-w-lg mx-auto">
           Powerful, open-source database editor that generates intelligent
-          queries and schemas.Web version available now - desktop app coming
-          soon!
+          queries and schemas.
         </p>
       </div>
 
@@ -604,7 +603,7 @@ export function HeroSection() {
           className="w-full"
         >
           <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
-            Try Web Version Now
+            Open in Browser
           </Button>
         </Link>
 
@@ -630,19 +629,15 @@ export function HeroSection() {
       <div className="mt-8 flex items-center justify-center gap-x-8 text-sm text-gray-500">
         <div className="flex items-center gap-x-2">
           <Database className="h-4 w-4" />
-          <span>Smart Query Generation</span>
+          <span>Modern & Intuitive Database Editor</span>
         </div>
         <div className="flex items-center gap-x-2">
           <Zap className="h-4 w-4" />
-          <span>Auto Schema Builder</span>
+          <span>One-Click Schema & Table Builder</span>
         </div>
         <div className="flex items-center gap-x-2">
-          <Users className="h-4 w-4" />
-          <span>Open Source</span>
-        </div>
-        <div className="flex items-center gap-x-2">
-          <Shield className="h-4 w-4" />
-          <span>100% Free</span>
+          <Code className="h-4 w-4" />
+          <span>Open Source & Developer Friendly</span>
         </div>
       </div>
     </section>
