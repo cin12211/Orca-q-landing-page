@@ -36,14 +36,14 @@ export const metadata: Metadata = {
       "Powerful open-source database editor and generator. Simplify SQL, manage schemas, and collaborate on data projects.",
     url: websiteUrl,
     siteName: siteName,
-    // images: [
-    //   {
-    //     url: "https://orca-query.com/og-image.png",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Orca Query Database Editor",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://orca-q.com/images/editor-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Orca Query Database Editor",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
