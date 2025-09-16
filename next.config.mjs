@@ -10,7 +10,6 @@ const nextConfig = {
     // your project has type errors.
     ignoreBuildErrors: true,
   },
-  distDir: "out",
   cleanDistDir: true,
   output: "export",
   images: {
