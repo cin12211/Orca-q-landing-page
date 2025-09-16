@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Header } from "./header";
-import Link from "next/link";
+import { Database, Github, Shield, Users, Zap } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -578,12 +578,13 @@ export function HeroSection() {
         </h1>
 
         <p className="text-muted-foreground text-base md:text-base lg:text-lg font-medium leading-relaxed max-w-lg mx-auto">
-          Accelerate your development workflow with intelligent AI agents that
-          write, review, and optimize your code.
+          Powerful, open-source database editor that generates intelligent
+          queries and schemas.Web version available now - desktop app coming
+          soon!
         </p>
       </div>
 
-      <Link
+      {/* <Link
         href="https://vercel.com/home"
         target="_blank"
         rel="noopener noreferrer"
@@ -591,7 +592,42 @@ export function HeroSection() {
         <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
           Signup for free
         </Button>
-      </Link>
+      </Link> */}
+
+      <div className="flex items-center justify-center gap-x-6">
+        <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
+          Try Web Version Now
+        </Button>
+        <Button className="relative z-10 text-white px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
+          <Github /> View on GitHub
+        </Button>
+      </div>
+
+      <div className="mt-8 flex items-center justify-center gap-x-8 text-sm">
+        <div className="flex items-center gap-x-2 text-green-600 font-medium">
+          <span className="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
+          <span>Web Version Available</span>
+        </div>
+      </div>
+
+      <div className="mt-8 flex items-center justify-center gap-x-8 text-sm text-gray-500">
+        <div className="flex items-center gap-x-2">
+          <Database className="h-4 w-4" />
+          <span>Smart Query Generation</span>
+        </div>
+        <div className="flex items-center gap-x-2">
+          <Zap className="h-4 w-4" />
+          <span>Auto Schema Builder</span>
+        </div>
+        <div className="flex items-center gap-x-2">
+          <Users className="h-4 w-4" />
+          <span>Open Source</span>
+        </div>
+        <div className="flex items-center gap-x-2">
+          <Shield className="h-4 w-4" />
+          <span>100% Free</span>
+        </div>
+      </div>
     </section>
   );
 }

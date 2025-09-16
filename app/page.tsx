@@ -4,7 +4,6 @@ import { SocialProof } from "@/components/social-proof";
 import { LargeTestimonial } from "@/components/large-testimonial";
 import { TestimonialGridSection } from "@/components/testimonial-grid-section";
 import { FAQSection } from "@/components/faq-section";
-import { CTASection } from "@/components/cta-section";
 import { FooterSection } from "@/components/footer-section";
 import { AnimatedSection } from "@/components/animated-section";
 import { SectionedFeatures } from "@/components/sectioned-features";
@@ -16,14 +15,14 @@ export default function LandingPage() {
         <main className="  relative">
           <HeroSection />
           {/* Dashboard Preview Wrapper */}
-          <div className="absolute bottom-[-200px] md:bottom-[-350px] left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-[-200px] md:bottom-[-470px] left-1/2 transform -translate-x-1/2">
             <AnimatedSection>
               <DashboardPreview />
             </AnimatedSection>
           </div>
         </main>
         <AnimatedSection
-          className="relative z-10 max-w-[1320px] mx-auto px-6 mt-[150px] md:mt-[300px]"
+          className="relative z-10 max-w-[1320px] mx-auto px-6 mt-[150px] md:mt-[380px]"
           delay={0.1}
         >
           <SocialProof />
@@ -62,12 +61,12 @@ export default function LandingPage() {
         >
           <FAQSection />
         </AnimatedSection>
-        <AnimatedSection
+        {/* <AnimatedSection
           className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16"
           delay={0.2}
         >
           <CTASection />
-        </AnimatedSection>
+        </AnimatedSection> */}
         <AnimatedSection
           className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16"
           delay={0.2}

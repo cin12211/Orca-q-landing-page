@@ -1,14 +1,22 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import AiCodeReviews from "./bento/ai-code-reviews"
-import RealtimeCodingPreviews from "./bento/real-time-previews"
-import OneClickIntegrationsIllustration from "./bento/one-click-integrations-illustration"
-import MCPConnectivityIllustration from "./bento/mcp-connectivity-illustration"
-import EasyDeployment from "./bento/easy-deployment"
-import ParallelCodingAgents from "./bento/parallel-agents"
+import { motion } from "framer-motion";
+import AiCodeReviews from "./bento/ai-code-reviews";
+import RealtimeCodingPreviews from "./bento/real-time-previews";
+import OneClickIntegrationsIllustration from "./bento/one-click-integrations-illustration";
+import MCPConnectivityIllustration from "./bento/mcp-connectivity-illustration";
+import EasyDeployment from "./bento/easy-deployment";
+import ParallelCodingAgents from "./bento/parallel-agents";
 
-const FeatureCard = ({ title, description, Component }) => (
+const FeatureCard = ({
+  title,
+  description,
+  Component,
+}: {
+  title: string;
+  description: string;
+  Component: React.FC;
+}) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +48,7 @@ const FeatureCard = ({ title, description, Component }) => (
       <Component />
     </div>
   </motion.div>
-)
+);
 
 export function SectionedFeatures() {
   const features = [
@@ -80,7 +88,7 @@ export function SectionedFeatures() {
       description: "Go from code to live deployment on Vercel instantly.",
       Component: EasyDeployment,
     },
-  ]
+  ];
 
   return (
     <section
@@ -96,8 +104,9 @@ export function SectionedFeatures() {
               Empower Your Workflow with AI
             </h2>
             <p className="w-full max-w-[600px] text-center text-muted-foreground text-lg md:text-xl font-medium leading-relaxed">
-              Ask your AI Agent for real-time collaboration, seamless integrations, and actionable insights to
-              streamline your operations.
+              Ask your AI Agent for real-time collaboration, seamless
+              integrations, and actionable insights to streamline your
+              operations.
             </p>
           </div>
         </div>
@@ -119,5 +128,5 @@ export function SectionedFeatures() {
         </div>
       </div>
     </section>
-  )
+  );
 }

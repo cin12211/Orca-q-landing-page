@@ -85,9 +85,17 @@ export function Header() {
               className="hidden md:block"
             >
               <Button className="bg-white/95 text-black hover:bg-white px-6 py-2 rounded-full font-medium shadow-sm border border-white/20">
-                Try for Free
+                Try Web Version Now
               </Button>
             </Link>
+
+            <a href="https://github.com/cin12211/HeraQ">
+              <img
+                src="https://img.shields.io/github/stars/cin12211/HeraQ?style=social"
+                alt="stars - HeraQ"
+              />
+            </a>
+
             <Sheet>
               <SheetTrigger asChild className="md:hidden">
                 <Button variant="ghost" size="icon" className="text-foreground">
@@ -122,7 +130,7 @@ export function Header() {
                     className="w-full mt-4"
                   >
                     <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
-                      Try for Free
+                      Try Web Version Now
                     </Button>
                   </Link>
                 </nav>
