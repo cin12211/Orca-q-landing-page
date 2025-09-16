@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { appUrl, githubUrl } from "@/constants";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -79,7 +80,7 @@ export function Header() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="https://vercel.com/home"
+              href={appUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:block"
@@ -89,7 +90,7 @@ export function Header() {
               </Button>
             </Link>
 
-            <a href="https://github.com/cin12211/HeraQ">
+            <a href={githubUrl}>
               <img
                 src="https://img.shields.io/github/stars/cin12211/HeraQ?style=social"
                 alt="stars - HeraQ"
@@ -124,7 +125,7 @@ export function Header() {
                     </Link>
                   ))}
                   <Link
-                    href="https://vercel.com/home"
+                    href={appUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full mt-4"

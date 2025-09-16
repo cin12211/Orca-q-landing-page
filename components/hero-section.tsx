@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Header } from "./header";
 import { Database, Github, Shield, Users, Zap } from "lucide-react";
+import Link from "next/link";
+import { appUrl, githubUrl } from "@/constants";
 
 export function HeroSection() {
   return (
@@ -595,12 +597,27 @@ export function HeroSection() {
       </Link> */}
 
       <div className="flex items-center justify-center gap-x-6">
-        <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
-          Try Web Version Now
-        </Button>
-        <Button className="relative z-10 text-white px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
-          <Github /> View on GitHub
-        </Button>
+        <Link
+          href={appUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full"
+        >
+          <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
+            Try Web Version Now
+          </Button>
+        </Link>
+
+        <Link
+          href={githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full"
+        >
+          <Button className="relative z-10 text-white px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
+            <Github /> View on GitHub
+          </Button>
+        </Link>
       </div>
 
       <div className="mt-8 flex items-center justify-center gap-x-8 text-sm">
