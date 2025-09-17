@@ -2,6 +2,7 @@
 
 import type React from "react";
 import { useState, useEffect } from "react";
+import Image from "next/image"; // Import the Image component
 
 import { Button } from "@/components/ui/button";
 import {
@@ -61,7 +62,15 @@ export function Header() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
-              <span className="text-foreground text-xl font-semibold">
+              <Image
+                src="/images/logo.png"
+                alt="log"
+                width={25}
+                height={25}
+                className="object-cover shadow-lg"
+              />
+
+              <span className="text-foreground text-2xl font-semibold">
                 Orca-q
               </span>
             </div>

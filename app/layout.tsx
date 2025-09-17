@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://orca-q.com/images/editor-preview.png",
-        width: 1200,
-        height: 630,
+        width: 2858,
+        height: 1876,
         alt: "Orca Query Database Editor",
       },
     ],
