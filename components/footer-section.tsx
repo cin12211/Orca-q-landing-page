@@ -46,7 +46,7 @@ export function FooterSection() {
           </div>
         </div>
         <p className="text-foreground/90 text-sm font-medium leading-[18px] text-left">
-          The open source - Generator database editor
+          The open source - Next Generation database editor
         </p>
         <div className="flex justify-start items-start gap-3">
           <a

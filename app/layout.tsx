@@ -17,9 +17,9 @@ const websiteUrl = "https://orca-q.com";
 const siteName = "Orca Query";
 
 export const metadata: Metadata = {
-  title: "Orca Query | Open Source Database Editor & Generator",
+  title: "Orca Query | Open Source Database Editor & Next Generation",
   description:
-    "Orca Query is an open-source database editor and generator. Build, explore, and manage databases with ease — built for developers and teams.",
+    "Orca Query is an open-source database editor and Next Generation. Build, explore, and manage databases with ease — built for developers and teams.",
   keywords: [
     "database editor",
     "open source database tool",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Orca Query Team", url: websiteUrl }],
   openGraph: {
-    title: "Orca Query | Open Source Database Editor & Generator",
+    title: "Orca Query | Open Source Database Editor & Next Generation",
     description:
-      "Powerful open-source database editor and generator. Simplify SQL, manage schemas, and collaborate on data projects.",
+      "Powerful open-source database editor and Next Generation. Simplify SQL, manage schemas, and collaborate on data projects.",
     url: websiteUrl,
     siteName: siteName,
     images: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   // twitter: {
   //   card: "summary_large_image",
-  //   title: "Orca Query | Open Source Database Editor & Generator",
+  //   title: "Orca Query | Open Source Database Editor & Next Generation",
   //   description:
   //     "Simplify database editing and SQL generation with Orca Query — free & open source.",
   //   images: ["https://orca-query.com/og-image.png"],
