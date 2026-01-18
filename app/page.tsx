@@ -5,6 +5,7 @@ import { FAQSection } from "@/components/faq-section";
 import { FooterSection } from "@/components/footer-section";
 import { AnimatedSection } from "@/components/animated-section";
 import { SectionedFeatures } from "@/components/sectioned-features";
+import { InstallGuideSection } from "@/components/install-guide-section";
 
 export default function LandingPage() {
   return (
@@ -32,6 +33,13 @@ export default function LandingPage() {
         >
           <SectionedFeatures />
         </AnimatedSection>
+        <AnimatedSection
+          id="install-guide-section"
+          className="relative z-10 max-w-[1320px] mx-auto mt-16 md:mt-24"
+          delay={0.2}
+        >
+          <InstallGuideSection />
+        </AnimatedSection>
         {/* <AnimatedSection
           className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16"
           delay={0.2}
@@ -54,7 +62,7 @@ export default function LandingPage() {
         </AnimatedSection> */}
         <AnimatedSection
           id="faq-section"
-          className="relative z-10 max-w-[1320px] mx-auto"
+          className="relative z-10 max-w-[1320px] mx-auto mt-16 md:mt-24"
           delay={0.2}
         >
           <FAQSection />

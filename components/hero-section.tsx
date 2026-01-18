@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Header } from "./header";
-import { Database, Github, Zap, Code } from "lucide-react";
+import { Database, Github, Zap, Code, Globe } from "lucide-react";
 import Link from "next/link";
-import { appUrl, githubUrl } from "@/constants";
+import { appUrl, githubUrl, npxUrl } from "@/constants";
 
 export function HeroSection() {
   return (
@@ -603,7 +603,18 @@ export function HeroSection() {
           className="w-full"
         >
           <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
-            Open in Browser
+            <Globe /> Open in Browser
+          </Button>
+        </Link>
+
+        <Link
+          href={npxUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full"
+        >
+          <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
+            <Code /> npx orcaq
           </Button>
         </Link>
 
